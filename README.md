@@ -5,3 +5,19 @@
  
  For any queries, feel free to write to: lrdmurthy@iisc.ac.in
  
+
+
+Citation:
+
+@article{lrd2023towards,
+  title={Towards Precision in Appearance-based Gaze Estimation in the Wild},
+  author={LRD, Murthy and Mukhopadhyay, Abhishek and Aggarwal, Shambhavi and Anand, Ketan and Biswas, Pradipta},
+  journal={arXiv preprint arXiv:2302.02353},
+  year={2023}
+}
+
+Dataset Structure:
+
+---Train
+	|
+	|
