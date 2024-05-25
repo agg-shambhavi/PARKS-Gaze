@@ -47,18 +47,45 @@ Parks-Gaze-Release.7z
 │   │── session_xx.h5   
 ```
 
+##"session_x.h5" File Structure
 
+```
+The attributes of each h5 file is a dictionary named "session_metadata" which contains the following necessary information about each session. 
+
+- ParticipantID
+- SessionID
+- Intrinsic_Matrix : Camera Intrinsics Information
+- Dist_Coeffs : Distortion coefficients of the camera (Used to undistort the images obtained using the camera during normalization)
+- Screen_Resolution_X_mm : Width of the display (X direction) used in this particular session in millimeters
+- Screen_Resolution_Y_mm : Height of the display (Y direction) used in this particular session in millimeters
+- Screen_Resolution_X_px : Horizontal resolution of display used in this particular session in pixels
+- Screen_Resolution_Y_px : Vertical resolution of display used in this particular session in pixels
+- Camera_Screen_R : Extrinsic rotational matrix between camera and the screen coordinate systems
+- Camera_Screen_T : Extrinsic translational vector between camera and the screen coordinate systems
 
 In the format where a normalized face crop of 120x120 and left and right eye crops are present, a generic session_x.h5 file contains dictionaries with below keys.
 
 - Norm_Face: Contains normalized face crops of that session (size 120x120).
-- FixationID: IDs of fixations of interest, identifying key fixations during the session.
-- Norm_gaze: Normalized gaze data representing where the participant was looking.
+- Norm_Leye: Contains normalized left eye crops of that session (size 36x60).
+- Norm_Reye: Contains normalized right eye crops of that session (size 36x60).
+- FixationID: Fixation IDs of the normalized samples available in this session. Each session recorded participants while making multiple fixations. Each fixation involves participant looking at a point on screen and making one of the following: head pose variation (position / orientation), facial expressions, activities like talking. 
+- Norm_gaze: Normalized gaze data representing where the participant was looking. Format : [pitch, yaw]
 - Norm_hp: Normalized head pose data, useful for understanding the head orientation.
-- GazePt_Px: Gaze points in pixel coordinates.
-- GazePt_mm: Gaze points in millimeter coordinates, providing a physical measurement of gaze points.
-- FcCenter: Data representing the center of the face.
-- FcRotMat: Rotation matrix of the face, useful for transforming coordinates.
+- GazePt_Px: Gaze points in pixels (screen coordinate system).
+- GazePt_mm: Gaze points in millimeters (screen coordinate system).
+- FcCenter: Face center information of all normalized samples in the session. Format: [x, y, z], obtained as the average of the four eye corner landmarks using OpenFace 2.0 toolkit [1]
+- FcRotMat: Rotation matrix of the face.
+
+
+In the format where a normalized face crop of 224x224 is available, the left and right eye crops are not provided.
+
+
+- For the task of 3D gaze estimation, one may use the Norm_Face, Norm_Leye and Norm_Reye along with Norm_gaze to train and evaluate the models. 
+
+- For evaluating precision of the models on this dataset, one may transform the gaze predictions from the model (preds) to screen points using the python script "maptodisplay.py". The standard deviation across all predicted screen points corresponding to a single FixationID would be the precision error. 
+
+
+```
 
 
 
