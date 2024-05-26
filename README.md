@@ -1,4 +1,4 @@
-## PARKS-Gaze - Github page for the details and access of PARKS-gaze Dataset
+# PARKS-Gaze - Github page for the details and access of PARKS-gaze Dataset
 
 We provide an In-the-Wild gaze estimation dataset PARKS-Gaze. 
 
@@ -8,7 +8,7 @@ We provide an In-the-Wild gaze estimation dataset PARKS-Gaze.
 
 - We provide the dataset in two formats. In one format, normalized face crop of size 120x120 along with the eye crop size of 36x60 are provided. In another format, normalized face crop of size 3x224x224 alone are provided without eye crops. We chose to release in these formats as most of the existing methods / approaches adopt one of these input sizes. 
 
-## Dataset Structure
+# Dataset Structure
 ```
 Parks-Gaze-Release.7z
 ├── Participant0
@@ -47,7 +47,7 @@ Parks-Gaze-Release.7z
 │   │── session_xx.h5   
 ```
 
-## session_x.h5 File Structure
+# session_x.h5 File Structure
 
 ```
 The attributes of each h5 file is a dictionary named "session_metadata" which contains the following necessary information about each session. 
@@ -88,13 +88,23 @@ In the format where a normalized face crop of 224x224 is available, the left and
 ```
 
 
+## Train, Valid and Test Split Details:
 
-
-# Train, Valid and Test Split Details:
-
----Train
-	|
-	|
+Train
+├── ParticipantIDs: 0, 1, 2, 3, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 23, 24, 25, 26 
+Valid
+├── ParticipantID: 6 
+├── ParticipantID: 7
+├── ParticipantID: 11
+├── ParticipantID: 22
+Test
+├── ParticipantID: 4 
+├── ParticipantID: 5	
+├── ParticipantID: 8	
+├── ParticipantID: 9	
+├── ParticipantID: 10
+├── ParticipantID: 27
+	
 
 
 For any queries, feel free to write to: lrdmurthy@iisc.ac.in
