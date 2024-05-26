@@ -8,7 +8,7 @@ We provide an In-the-Wild gaze estimation dataset PARKS-Gaze.
 
 - We provide the dataset in two formats. In one format, normalized face crop of size 120x120 along with the eye crop size of 36x60 are provided. In another format, normalized face crop of size 3x224x224 alone are provided without eye crops. We chose to release in these formats as most of the existing methods / approaches adopt one of these input sizes. 
 
-# Dataset Structure
+## Dataset Structure
 ```
 Parks-Gaze-Release.7z
 ├── Participant0
@@ -47,7 +47,7 @@ Parks-Gaze-Release.7z
 │   │── session_xx.h5   
 ```
 
-# session_x.h5 File Structure
+## session_x.h5 File Structure
 
 ```
 The attributes of each h5 file is a dictionary named "session_metadata" which contains the following necessary information about each session. 
@@ -131,7 +131,7 @@ For any queries and collaborations related to gaze estimation, feel free to writ
 I would love to collaborate or provide any information that I can share.  
 
 
-License + Attribution
+## License + Attribution
 
 - The PARKS-Gaze dataset is licensed under CC BY-NC-SA 4.0. Commercial usage is not permitted. If you use this dataset or the code in a scientific publication or in a patent, please cite the following paper:
 
