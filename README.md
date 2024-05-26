@@ -47,7 +47,7 @@ Parks-Gaze-Release.7z
 │   │── session_xx.h5   
 ```
 
-##"session_x.h5" File Structure
+## session_x.h5 File Structure
 
 ```
 The attributes of each h5 file is a dictionary named "session_metadata" which contains the following necessary information about each session. 
@@ -89,8 +89,15 @@ In the format where a normalized face crop of 224x224 is available, the left and
 
 
 
- 
- For any queries, feel free to write to: lrdmurthy@iisc.ac.in
+
+# Train, Valid and Test Split Details:
+
+---Train
+	|
+	|
+
+
+For any queries, feel free to write to: lrdmurthy@iisc.ac.in
  
 
 
@@ -102,9 +109,3 @@ Citation:
   journal={arXiv preprint arXiv:2302.02353},
   year={2023}
 }
-
-Dataset Structure:
-
----Train
-	|
-	|
