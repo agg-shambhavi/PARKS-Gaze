@@ -90,6 +90,8 @@ In the format where a normalized face crop of 224x224 is available, the left and
 
 ## Train, Valid and Test Split Details:
 
+```
+
 Train
 ├── ParticipantIDs: 0, 1, 2, 3, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 23, 24, 25, 26 
 Valid
@@ -104,6 +106,7 @@ Test
 ├── ParticipantID: 9	
 ├── ParticipantID: 10
 ├── ParticipantID: 27
+```
 	
 
 
