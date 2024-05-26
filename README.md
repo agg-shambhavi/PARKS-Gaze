@@ -1,5 +1,8 @@
 # PARKS-Gaze - Github page for the details and access of PARKS-gaze Dataset
 
+
+####Link to the [paper](https://arxiv.org/abs/2302.02353)
+
 We provide an In-the-Wild gaze estimation dataset PARKS-Gaze. 
 
 - PARKS-Gaze contains 300,961 images of 28 subjects. We divide the dataset into Train, Valid and Test splits ensuring similar head pose and gaze distribution in all three splits. The number of subjects in Train, Valid and Test splits are 18, 4, and 6. 
