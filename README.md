@@ -95,17 +95,10 @@ In the format where a normalized face crop of 224x224 is available, the left and
 Train
 ├── ParticipantIDs: 0, 1, 2, 3, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 23, 24, 25, 26 
 Valid
-├── ParticipantID: 6 
-├── ParticipantID: 7
-├── ParticipantID: 11
-├── ParticipantID: 22
+├── ParticipantIDs: 6, 7, 11, 22 
 Test
-├── ParticipantID: 4 
-├── ParticipantID: 5	
-├── ParticipantID: 8	
-├── ParticipantID: 9	
-├── ParticipantID: 10
-├── ParticipantID: 27
+├── ParticipantID: 4, 5, 8, 9, 10, 27
+
 ```
 	
 
