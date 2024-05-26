@@ -146,6 +146,6 @@ I would love to collaborate or provide any information that I can share.
 
 - The full manuscript with additional experiments compared to the arxiv version is currently under review for a journal. 
 
-
-Note: The name of the dataset is formed using the first letters of the first names of the authors, Pradipta, Abhishek, Raghavendra, Ketan and Shambhavi.
-Second Note: Took help of "https://github.com/yihuacheng/IVGaze?tab=readme-ov-file" to make this page. Thanks to Dr. Yihua Cheng. 
+## Notes
+- The name of the dataset is formed using the first letters of the first names of the authors, Pradipta, Abhishek, Raghavendra, Ketan and Shambhavi.
+- I Took help of "https://github.com/yihuacheng/IVGaze?tab=readme-ov-file" to make this page. Thanks to Dr. Yihua Cheng. 
