@@ -1,4 +1,6 @@
-# PARKS-Gaze - Github page for the details and access of PARKS-gaze Dataset
+
+# PARKS-Gaze 
+## Details and access of PARKS-gaze Dataset
 
 
 ### Link to the paper, [Towards Precision in Appearance-based Gaze Estimation](https://arxiv.org/abs/2302.02353)
