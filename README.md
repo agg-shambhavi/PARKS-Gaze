@@ -100,18 +100,52 @@ Test
 ├── ParticipantID: 4, 5, 8, 9, 10, 27
 
 ```
-	
+
+## Download
+To obtain access to the dataset, please send an email to `lrdmurthy@iisc.ac.in`. 
+You will receive a Google Drive link within three days for downloading the dataset.
+Please mention which format you would like to request (Either the face crops of size 120x120 along with eye crops or the one only with face crops of size 3x224x224. You may request both). 
+
+Here's a sample email template for requesting access to the PARKS-Gaze Dataset. Please do not change the email subject.
+
+Kindly fill the following details before sending
+
+```
+Subject: Request for Access to PARKS-Gaze Dataset
+
+Dear Murthy,
+
+XXXXXXXXXX
+
+Your Name: 
+Your Position / Role: 
+Your Affiliation : 
+
+Kindly mention and guarantee that you will only utilize the dataset for academic and research purposes and will not use it for commercial activities.
+
+```	
 
 
-For any queries, feel free to write to: lrdmurthy@iisc.ac.in
- 
+For any queries and collaborations related to gaze estimation, feel free to write to: lrdmurthy@iisc.ac.in
+
+I would love to collaborate or provide any information that I can share.  
 
 
-Citation:
+License + Attribution
 
+- The PARKS-Gaze dataset is licensed under CC BY-NC-SA 4.0. Commercial usage is not permitted. If you use this dataset or the code in a scientific publication or in a patent, please cite the following paper:
+
+```
 @article{lrd2023towards,
   title={Towards Precision in Appearance-based Gaze Estimation in the Wild},
   author={LRD, Murthy and Mukhopadhyay, Abhishek and Aggarwal, Shambhavi and Anand, Ketan and Biswas, Pradipta},
   journal={arXiv preprint arXiv:2302.02353},
   year={2023}
 }
+```
+
+- The full manuscript with additional experiments compared to the arxiv version is currently under review for a journal. 
+
+
+Note: The name of the dataset is formed using the first letters of the first names of the authors, Pradipta, Abhishek, Raghavendra, Ketan and Shambhavi.
+Second Note: Took help of "https://github.com/yihuacheng/IVGaze?tab=readme-ov-file" to make this page. Thanks to Dr. Yihua Cheng. 
