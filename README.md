@@ -11,7 +11,14 @@ We provide an In-the-Wild gaze estimation dataset PARKS-Gaze.
 
 - The dataset was collected in both indoor and outdoor environments, covering a wide range of  head poses, illumination conditions and intra-person appearance variations. 
 
-- We provide the dataset in two formats. In one format, normalized face crop of size 120x120 along with the eye crop size of 36x60 are provided. In another format, normalized face crop of size 3x224x224 alone are provided without eye crops. We chose to release in these formats as most of the existing methods / approaches adopt one of these input sizes. 
+- We provide the PARKS-Gaze dataset in two formats to cater to different input requirements of existing gaze estimation methods:
+  * Format 1: Face and Eye Crops
+    - Normalized face crop of size 120x120
+    - Left and right eye crops of size 36x60
+  * Format 2: Face Crop Only
+    - Normalized face crop of size 3x224x224
+    - No separate eye crops <br>
+- We chose to release in these formats as most of the existing methods / approaches adopt one of these input sizes. 
 
 ## Dataset Structure
 ```
@@ -132,8 +139,7 @@ Kindly mention and guarantee that you will only utilize the dataset for academic
 
 
 For any queries and collaborations related to gaze estimation, feel free to write to: lrdmurthy@iisc.ac.in
-
-I would love to collaborate or provide any information that I can share.  
+I would love to collaborate or provide more details.  
 
 
 ## License + Attribution
